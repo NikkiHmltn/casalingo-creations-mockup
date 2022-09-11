@@ -1,4 +1,149 @@
-html, body {
+@font-face {
+    font-family: lemonTuesday;
+    src: url(../assets/fonts/lemon-tuesday.regular.otf)
+}
+
+@font-face {
+    font-family: abrilFatFace;
+    src: url(../assets/fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: EBgaramond;
+    src: url(../assets/fonts/EBGaramond-VariableFont_wght.ttf);
+}
+
+/* tag rules */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    font-family: EBgaramond;
+    font-size: 1.25em;
+}
+
+input {
+    background-color: #0CA789;
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 5px;
+    font-family: EBgaramond;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+main {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+}
+
+main > section > div {
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+    align-content: center;
+    align-items: center;
+}
+
+/* navigation bar */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100px;
+}
+
+nav > div {
+    display: flex;
+    align-items: center;
+}
+
+.nav-option {
+    list-style: none;
+}
+
+#nav-logo {
+    font-family: lemonTuesday;
+    font-size: 50px;
+}
+
+/* Opening image and button */
+
+#first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/images/backgroundyarn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* first section of content */
+
+.section-content {
+    display: flex;
+    justify-content: center;
+}
+
+.headers {
+    font-family: abrilFatFace;
+    font-size: 35px;
+}
+
+.text-content {
+    padding: 1%;
+    margin: 2%;
+    
+}
+
+.section-grey {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.305); 
+}
+
+/* footer */
+
+footer {
+    background-color: #0CA789;
+    font-family: EBgaramond;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#address {
+    font-family: EBgaramond;
+}
+
+#social {
+    text-align: center;
+    font-family: EBgaramond;
+    font-size: 1.5em;
+    padding:0;
+}
+
+h3 {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    border-bottom: #fff 2px solid;
 }
